@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+@import 'header';
+
 $background-color: #D7CCC8;
 $font-family: 'Roboto', sans-serif;
 
@@ -38,8 +40,8 @@ $font-family: 'Roboto', sans-serif;
 body{
   font-family: $font-family;
   background: $background-color;
+  margin: 0;
 }
-
 
 .container{
   padding: 8% 0 0;
@@ -83,6 +85,11 @@ body{
 }
 
 .box{
-  box-sizing:border-box;
+  background-color: #FF5722;
+};
+
+.topper{
+  justify-content: end;
+  background-color:#00BFA5;
 }
 
