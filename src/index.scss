@@ -3,7 +3,7 @@
 $background-color: #D7CCC8;
 $font-family: 'Roboto', sans-serif;
 
-@mixin btn($fontcolor: #FAFAFA){
+@mixin btn($fontcolor: #FAFAFA) {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   outline: 0;
@@ -13,16 +13,17 @@ $font-family: 'Roboto', sans-serif;
   background: #FF5722;
   color: $fontcolor;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-@mixin message($fontcolor: #90A4AE){
+@mixin message($fontcolor: #90A4AE) {
   color: $fontcolor;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
-@mixin input($bkgnd: #F5F5F5){
+@mixin input($bkgnd: #F5F5F5) {
   font-family: $font-family;
   width: 100%;
   border: 0;
@@ -35,19 +36,19 @@ $font-family: 'Roboto', sans-serif;
   background: $bkgnd;
 }
 
-body{
+body {
   font-family: $font-family;
   background: $background-color;
 }
 
 
-.container{
+.container {
   padding: 8% 0 0;
   width: 365px;
   margin: auto;
 }
 
-.form{
+.form {
   position: relative;
   z-index: 1;
   max-width: 350px;
@@ -57,20 +58,21 @@ body{
 }
 
 .form {
-  input{
-    @include input; 
-    
+  input {
+    @include input;
+
     ::placeholder {
       color: #90A4AE;
     }
   }
-  
-  .btn{
+
+  .btn {
     @include btn;
   }
-  
+
   .message {
     @include message;
+
     a {
       text-decoration: none;
       color: #00BFA5;
@@ -78,11 +80,10 @@ body{
   }
 }
 
-.form .register-form{
+.form .register-form {
   display: none;
 }
 
-.box{
-  box-sizing:border-box;
+.box {
+  box-sizing: border-box;
 }
-
