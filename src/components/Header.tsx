@@ -5,7 +5,8 @@ export default function Header(){
 
     return(
         <div className='navbar'>
-        <Link to ={`/doclist`}><p>Doc</p></Link>
+                <h1>PDF Scanner</h1>
+                
     </div>
     )
 }

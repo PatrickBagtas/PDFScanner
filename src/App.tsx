@@ -2,6 +2,7 @@ import { Routes, Navigate, Route } from 'react-router-dom'
 import Register from './views/registration.view'
 import Login from './views/login.view'
 import DocList from './views/DocList'
+import Header from './components/Header'
 import './App.css'
 import { useState } from 'react'
 
@@ -15,8 +16,9 @@ function App() {
 
   return (
     <div className='app'>
+      <Header/>
       <div className='container'>
-        <h1>PDF Scanner</h1>
+
         <Routes>
           <Route path="/" element={<Navigate to="register" />} />
           <Route path="/register" element={<Register setUserId={handleUserId} />} />
